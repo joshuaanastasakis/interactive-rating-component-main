@@ -1,0 +1,136 @@
+:root {
+    --color-orange: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content: space-between;
+    background-color: var(--very-dark-blue);
+    /* width: 1440px;
+    height: 1440px; */
+    width: 375px;
+    height: 375px;
+
+    border-radius: 30px;
+    padding: 30px;
+}
+
+/* Star Image --START--*/
+.img-circle {
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    width: 50px;
+    height: 50px;
+    position: relative;
+    /* margin-bottom: 10px; */
+}
+
+img#star {
+    position: absolute;
+    left: calc(50% - (17px/2));
+    top: calc(50% - (16px/2))
+}
+/* Star Image --END--*/
+
+.title {
+    color: var(--color-white);
+    font-weight: var(--fw-700);
+    margin-bottom: 0px;
+}
+
+.subtitle {
+
+    color: var(--light-grey);
+    font-weight: var(--fw-400);
+    /* margin-bottom: 20px; */
+}
+
+.ratings {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.finalRating {
+    text-align: center;
+    align-self: center;
+    color: var(--color-orange);
+    background-color: var(--dark-blue);
+    width: 60%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+.img-thanks {
+    width: 60%;
+    align-self: center;
+}
+
+button.submit {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border: none;
+    width: 100%;
+    border-radius: 30px;
+    height: 50px;
+    font-size: 1.125rem;
+}
+
+button.circle {
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    width: 60px;
+    height: 60px;
+    /* padding: auto; */
+    display: block;
+    /* flex-flow: column; */
+    /* align-self: center; */
+    /* justify-self: center; */
+    font-weight: var(--fw-700);
+    /* margin: auto; */
+    border: none;
+    color: var(--light-grey);
+    font-size: 1.125rem;
+}
+
+button.selected {
+    background-color: var(--light-grey);
+    color: var(--color-white);
+}
+
+button.circle:hover {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+button.submit:hover {
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    cursor: pointer;
+}
+
+button.submit:disabled {
+    cursor:no-drop;
+    background-color: grey;
+    color: white;
+}

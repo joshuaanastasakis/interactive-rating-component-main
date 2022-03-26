@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
 
-  <!-- Rating state start -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./styles.css">
 
-  How did we do?
+  </head>
+  <body>
+    <div class="container">
+      <img class="img-thanks" style="display: none" src="./images/illustration-thank-you.svg" alt="">
+      <p id="finalRating" class="finalRating" style="display: none"></p>
+      <h3 id="finalTitle" class="title" style="display: none; align-self: center;">Thank you!</h3>
+      <p id="finalSubtitle" class="subtitle" style="display: none; text-align: center;">We appreciate you taking the time to give a rating. If you ever need mores upport, don't hesitate to get in touch!</p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <div class="img-circle">
+        <img id="star" src="./images/icon-star.svg" alt="">
+      </div>
+      <h3 id="firstTitle" class="title" >How did we do?</h3>
+      <p id="firstSubtitle" class="subtitle" >Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="ratings">
+        <button id="rating1" class="circle" >1</button>
+        <button id="rating2" class="circle" >2</button>
+        <button id="rating3" class="circle" >3</button>
+        <button id="rating4" class="circle" >4</button>
+        <button id="rating5" class="circle" >5</button>
+      </div>
+      <button disabled id="submit" class="submit">SUBMIT</button>
+    </div>
 
-  1 2 3 4 5
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://joshua.codes">Josh Harris</a>.
+    </div>
+  </body>
+  <script src="script.js"></script>
 
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
 </html>
