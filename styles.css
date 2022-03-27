@@ -21,10 +21,10 @@ body {
     margin: auto;
     justify-content: space-between;
     background-color: var(--very-dark-blue);
-    /* width: 1440px;
-    height: 1440px; */
+    /* width: 1440px; */
+    /* height: 1440px; */
     width: 375px;
-    height: 375px;
+    /* height: 375px; */
 
     border-radius: 30px;
     padding: 30px;
